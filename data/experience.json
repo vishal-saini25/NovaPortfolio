@@ -1,0 +1,48 @@
+[
+  {
+    "id": "exp-1",
+    "type": "Independent Projects",
+    "role": "AI/ML & Python Systems Builder",
+    "organization": "Self-Directed Engineering Portfolio",
+    "dates": "2025 — Present",
+    "location": "Remote",
+    "description": "Designing end-to-end machine learning workflows, exploratory data analysis toolkits, and neural network training experiments in Python.",
+    "technologies": [
+      "Python",
+      "PyTorch",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy"
+    ]
+  },
+  {
+    "id": "exp-2",
+    "type": "Technical Learning Milestones",
+    "role": "Machine Learning & Statistical Foundations",
+    "organization": "Algorithmic Implementation & Study",
+    "dates": "2024 — Present",
+    "location": "Independent",
+    "description": "Implementing core estimators from scratch in NumPy and studying cross-validation design, regularization, and optimization dynamics.",
+    "technologies": [
+      "Python",
+      "NumPy",
+      "Scikit-learn",
+      "Matplotlib"
+    ]
+  },
+  {
+    "id": "exp-3",
+    "type": "Research & Exploration",
+    "role": "Systems Programming & Data Structures",
+    "organization": "Computer Science Fundamentals",
+    "dates": "2023 — 2024",
+    "location": "Academic / Self-Paced",
+    "description": "Built a strong programming foundation in C, C++, and SQL focusing on memory management, algorithmic complexity, and clean modular code.",
+    "technologies": [
+      "C++",
+      "C",
+      "SQL",
+      "Python"
+    ]
+  }
+]

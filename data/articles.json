@@ -1,0 +1,35 @@
+[
+  {
+    "id": "blog-draft-1",
+    "title": "Vectorizing Gradient Descent in Pure NumPy",
+    "summary": "Translating multivariable calculus equations into fast, loop-free NumPy array broadcasting with loss contour visualizations.",
+    "dateLabel": "Note #01 · Draft",
+    "readingTime": "6 min read",
+    "topics": [
+      "NumPy",
+      "Optimization"
+    ]
+  },
+  {
+    "id": "blog-draft-2",
+    "title": "Preventing Data Leakage in Cross-Validation Pipelines",
+    "summary": "Why fitting scalers or imputers outside fold splits silently inflates validation scores, and how Pipeline objects solve it.",
+    "dateLabel": "Note #02 · Draft",
+    "readingTime": "5 min read",
+    "topics": [
+      "Scikit-learn",
+      "Best Practices"
+    ]
+  },
+  {
+    "id": "blog-draft-3",
+    "title": "Inside PyTorch Autograd & Computational Graphs",
+    "summary": "Understanding how dynamic computation graphs track tensor operations, why zero_grad() matters, and inspecting gradient flow.",
+    "dateLabel": "Note #03 · Draft",
+    "readingTime": "7 min read",
+    "topics": [
+      "PyTorch",
+      "Deep Learning"
+    ]
+  }
+]

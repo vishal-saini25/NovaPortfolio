@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0130)#contact -->
+<html lang="en" class="scroll-smooth dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova — AI/ML &amp; Software Developer</title>
+  <meta name="description" content="Personal engineering portfolio of Nova — AI/ML developer exploring Python, machine learning, data systems, and software engineering.">
+  <meta property="og:title" content="Nova — AI/ML &amp; Software Developer">
+  <meta property="og:description" content="I build software and explore machine learning to solve meaningful real-world problems.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMwOTBCMEUiLz4KICA8dGV4dCB4PSIxMyIgeT0iNDUiIGZvbnQtZmFtaWx5PSJQbHVzIEpha2FydGEgU2Fucywgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zaXplPSIzOCIgZmlsbD0iI0Y0RjRGMiI+TjwvdGV4dD4KICA8Y2lyY2xlIGN4PSI0OCIgY3k9IjQxIiByPSI1IiBmaWxsPSIjRDRBMTlBIi8+Cjwvc3ZnPg==">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS 3.4.17 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="css/framework.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="top" class="min-h-screen antialiased selection:bg-[#D4A359]/25 selection:text-[#F3F4F6] relative">
+  <div id="scroll-progress" aria-hidden="true" style="transform: scaleX(0.745226);"></div>
+
+  <!-- Interactive Custom Cursor Elements -->
+  <div id="cursor-dot" class="custom-cursor-dot" aria-hidden="true" style="transform: translate(430px, 3px) translate(-50%, -50%);"></div>
+  <div id="cursor-ring" class="custom-cursor-ring" aria-hidden="true" style="transform: translate(427.9px, 10.3px) translate(-50%, -50%);"></div>
+
+  <!-- Minimalist Coder Background: Architectural Grid + Drifting Code & ML Tokens -->
+  <div class="ambient-top-glow" aria-hidden="true"></div>
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Skip link for keyboard users -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#090B0E] focus:text-[#F3F4F6] focus:rounded focus:border focus:border-accentGold focus:font-mono focus:text-xs">
+    Skip to main content
+  </a>
+
+  <!-- Main Content Layer -->
+  <div class="relative z-10 flex flex-col min-h-screen">
+
+    <!-- =================================================================== -->
+    <!-- NAVIGATION BAR                                                      -->
+    <!-- =================================================================== -->
+    <header id="site-navbar" class="sticky top-0 z-40 w-full transition-all duration-200 bg-[#090B0E]/80 backdrop-blur-md border-b border-white/[0.06] nav-scrolled">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+        <!-- Typographic Brand Mark -->
+        <a href="#top" class="font-display text-lg sm:text-xl font-bold tracking-tight text-textPrimary flex items-center group" aria-label="Nova Portfolio Home">
+          <span>NOVA</span><span class="text-accentGold transition-transform duration-200 group-hover:scale-125">.</span>
+          <span class="hidden sm:inline-block ml-2.5 px-2 py-0.5 text-[10px] font-mono uppercase tracking-widest bg-white/[0.04] text-textSecondary border border-white/[0.08] rounded">
+            AI / ML
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-7 text-[13px] font-medium text-textSecondary">
+          <a href="#about" data-section="about" class="nav-link hover:text-textPrimary">About</a>
+          <a href="#skills" data-section="skills" class="nav-link hover:text-textPrimary">Stack</a>
+          <a href="#projects" data-section="projects" class="nav-link hover:text-textPrimary">Projects</a>
+          <a href="#experience" data-section="experience" class="nav-link hover:text-textPrimary active-nav">Journey</a>
+          <a href="#blogs" data-section="blogs" class="nav-link hover:text-textPrimary">Notes</a>
+          <a href="#contact" data-section="contact" class="nav-link hover:text-textPrimary">Contact</a>
+        </nav>
+
+        <!-- Right Side Utility Controls -->
+        <div class="flex items-center gap-2 sm:gap-2.5">
+          <!-- Command Palette Button (⌘K) -->
+          <button id="btn-cmd-palette" type="button" onclick="openCommandPalette()" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-mono text-textSecondary hover:text-textPrimary bg-white/[0.03] hover:bg-white/[0.07] border border-white/[0.08] rounded-lg transition-colors" title="Quick Navigation (⌘K)" aria-label="Open quick navigation command palette">
+            <svg class="w-3.5 h-3.5 text-accentGold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z"></path>
+            </svg>
+            <span class="hidden lg:inline">Jump</span>
+            <kbd class="px-1.5 py-0.5 text-[10px] bg-black/50 border border-white/10 rounded">⌘K</kbd>
+          </button>
+
+          <!-- Live Data Customizer Button -->
+          <button id="btn-open-editor" type="button" onclick="openDataEditorModal()" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-mono text-textPrimary bg-white/[0.03] hover:border-accentGold/60 border border-white/[0.08] rounded-lg transition-colors" title="Customize editable portfolio placeholders">
+            <svg class="w-3.5 h-3.5 text-accentGold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+            </svg>
+            <span>Edit Info</span>
+          </button>
+
+          <!-- Contact CTA Button -->
+          <a href="#contact" class="hidden lg:inline-flex items-center px-3.5 py-1.5 text-xs font-mono uppercase tracking-wider font-semibold text-[#090B0E] bg-accentGold hover:bg-accentGoldHover rounded-lg transition-colors">
+            Contact
+          </a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button id="btn-mobile-menu" type="button" onclick="toggleMobileMenu()" class="md:hidden p-2 text-textPrimary bg-white/[0.04] border border-white/10 rounded-lg" aria-expanded="false" aria-controls="mobile-nav-drawer" aria-label="Toggle navigation menu">
+            <svg id="icon-menu-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg id="icon-menu-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-nav-drawer" class="hidden md:hidden border-t border-white/10 bg-[#090B0E]/95 backdrop-blur-md px-4 pt-3 pb-5 space-y-2">
+        <div class="grid grid-cols-2 gap-2">
+          <a href="#about" onclick="closeMobileMenu()" class="px-3 py-2.5 rounded-lg text-sm font-medium text-textPrimary hover:bg-white/5">01 / About</a>
+          <a href="#skills" onclick="closeMobileMenu()" class="px-3 py-2.5 rounded-lg text-sm font-medium text-textPrimary hover:bg-white/5">02 / Stack</a>
+          <a href="#projects" onclick="closeMobileMenu()" class="px-3 py-2.5 rounded-lg text-sm font-medium text-textPrimary hover:bg-white/5">03 / Projects</a>
+          <a href="#experience" onclick="closeMobileMenu()" class="px-3 py-2.5 rounded-lg text-sm font-medium text-textPrimary hover:bg-white/5">04 / Journey</a>
+          <a href="#blogs" onclick="closeMobileMenu()" class="px-3 py-2.5 rounded-lg text-sm font-medium text-textPrimary hover:bg-white/5">05 / Notes</a>
+          <a href="#contact" onclick="closeMobileMenu()" class="px-3 py-2.5 rounded-lg text-sm font-medium text-textPrimary hover:bg-white/5">06 / Contact</a>
+        </div>
+        <div class="pt-2 flex items-center justify-between gap-2 border-t border-white/10">
+          <button type="button" onclick="closeMobileMenu(); openCommandPalette();" class="flex-1 py-2 px-3 text-xs font-mono text-left bg-white/5 rounded-lg border border-white/10 text-textSecondary">
+            Quick Jump (⌘K)
+          </button>
+          <a href="#contact" onclick="closeMobileMenu()" class="py-2 px-4 text-xs font-mono uppercase tracking-wider bg-accentGold text-[#090B0E] rounded-lg font-semibold">
+            Contact
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="flex-1">
+
+      <!-- =================================================================== -->
+      <!-- HERO SECTION — TYPED NOVA TITLE & SEAMLESS DENJI PORTRAIT           -->
+      <!-- =================================================================== -->
+      <section id="hero" class="relative pt-12 pb-16 sm:pt-20 sm:pb-24 lg:pt-24 lg:pb-28">
+        <div class="hero-ember-glow" aria-hidden="true"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+
+            <!-- Left Column: Introduction & CTAs (7 cols) -->
+            <div class="lg:col-span-7 space-y-6">
+              <!-- Eyebrow label -->
+              <div class="inline-flex items-center gap-2.5 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] backdrop-blur-sm">
+                <span class="w-1.5 h-1.5 rounded-full bg-accentGold animate-pulse"></span>
+                <span id="hero-eyebrow" class="font-mono text-[11px] uppercase tracking-widest text-textSecondary font-medium">AI / MACHINE LEARNING / SOFTWARE</span>
+              </div>
+
+              <!-- Main Heading: "Nova." with Typing Animation -->
+              <div class="space-y-3">
+                <h1 class="hero-h1 font-display font-extrabold text-textPrimary tracking-tight leading-[1.04] flex items-center min-h-[1.15em]">
+                  <span id="typed-text">Nova.</span><span id="typed-cursor" class="cursor-blink text-accentGold ml-0.5 font-normal">|</span>
+                </h1>
+                <!-- Concise Professional Statement -->
+                <p id="hero-statement" class="font-display text-xl sm:text-2xl lg:text-[26px] font-semibold text-textPrimary/90 leading-snug max-w-2xl">I build software and explore machine learning to solve meaningful real-world problems.</p>
+              </div>
+
+              <!-- Supporting Paragraph -->
+              <p id="hero-supporting" class="text-base sm:text-[17px] text-textSecondary max-w-xl leading-relaxed">Focused on Python, machine learning pipelines, data-driven systems, and turning mathematical concepts into clean, reliable software.</p>
+
+              <!-- CTA Buttons -->
+              <div class="pt-1 flex flex-wrap items-center gap-3.5">
+                <a href="#projects" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-sm font-semibold btn-rev bg-accentGold text-[#090B0E] hover:bg-accentGoldHover transition-all shadow-sm">
+                  <span>View Projects</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  </svg>
+                </a>
+
+                <a href="#contact" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg font-medium text-sm glass-panel text-textPrimary border border-white/10 hover:border-accentGold/60 transition-all">
+                  <span>Get In Touch</span>
+                </a>
+
+                <a href="#blogs" class="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-mono uppercase tracking-wider text-textSecondary hover:text-accentGold transition-colors">
+                  <span>Notes</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+
+              <!-- Minimal Terminal Status Line -->
+              <div class="pt-4 border-t border-white/[0.06] flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-mono text-textMuted">
+                <div class="flex items-center gap-2">
+                  <span class="text-accentGold">$</span>
+                  <span id="hero-motto" class="text-textSecondary">Building · Learning · Experimenting</span>
+                </div>
+                <span class="hidden sm:inline text-white/15">|</span>
+                <span class="text-textMuted">Python · PyTorch · Scikit-learn · C++</span>
+              </div>
+            </div>
+
+            <!-- Right Column: Cleanly Extracted Denji Portrait Seamlessly Blended into Background -->
+            <div class="lg:col-span-5 flex flex-col items-center lg:items-end order-first sm:order-none">
+              <div id="denji-card-wrapper" class="denji-card-wrapper w-full max-w-[280px] sm:max-w-sm lg:max-w-[400px] cursor-pointer select-none" aria-label="Interactive 3D Denji Portrait">
+                <!-- Warm ambient back-glow matching golden-ochre hair -->
+                <div class="denji-ambient-halo" aria-hidden="true"></div>
+
+                <!-- 3D Card Inner -->
+                <div id="denji-3d-card" class="denji-3d-card animate-subtle-float" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+                  <!-- Dynamic Card Glare Layer -->
+                  <div id="denji-glare" class="denji-card-glare" aria-hidden="true" style="--glare-x: 53.7%; --glare-y: 50.2%;"></div>
+
+                  <!-- Cleanly Segmented & Color-Balanced Denji Portrait -->
+                  <div class="hero-frame w-full" data-img="IMG-05">
+                    <div class="hero-media">
+                      <img id="denji-portrait" data-img-key="IMG-05" class="denji-portrait-img img-tone" alt="Illustrated portrait of Denji in a dark library, looking straight ahead — Nova's visual identity" width="736" height="736" loading="eager" fetchpriority="high" decoding="async" src="assets/images/embedded-image-01.webp">
+                      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+                      <span class="hero-chip font-mono"><i class="chip-dot"></i>denji.exe — running</span>
+                    </div>
+                    <p class="hero-caption font-mono">&gt; import denji as nova</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <div class="chain-divider" aria-hidden="true"></div>
+
+      <!-- =================================================================== -->
+      <!-- 01 / ABOUT ME SECTION                                               -->
+      <!-- =================================================================== -->
+      <section id="about" class="py-20 sm:py-24 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <!-- Section Header -->
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-7 border-b border-white/[0.07]">
+            <div>
+              <p class="eyebrow font-mono text-[11px] uppercase tracking-widest text-accentGold mb-1.5 reveal in" data-rv="1" style="--d: 0;">01 / ABOUT</p>
+              <h2 class="h-sweep font-display text-2xl sm:text-3xl font-bold text-textPrimary reveal in" data-rv="1" style="--d: 0;">Overview</h2>
+            </div>
+            <button type="button" onclick="openDataEditorModal('profile')" class="self-start sm:self-auto inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono text-textSecondary hover:text-textPrimary bg-white/[0.03] border border-white/[0.08] rounded-lg transition-colors">
+              <span>Edit Bio</span>
+              <span class="text-accentGold">✎</span>
+            </button>
+          </div>
+
+          <!-- Two-Column Editorial Layout -->
+          <div class="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+            <!-- Biography Column (7 cols) -->
+            <div class="lg:col-span-7 space-y-4 text-base text-textSecondary leading-relaxed">
+              <p id="about-para-1" class="text-textPrimary/95">I'm Nova, a developer building my foundation in software engineering and artificial intelligence. I enjoy understanding how systems work under the hood, experimenting with data and models, and translating technical concepts into practical applications.</p>
+              <p id="about-para-2">I'm particularly interested in machine learning, Python-based development, and projects that connect strong mathematical foundations with real-world usefulness.</p>
+              <p id="about-para-3">My goal is to keep learning through building, testing ideas, studying the fundamentals, and documenting what I discover along the way.</p>
+
+              <!-- Minimalist Focus Badges -->
+              <div class="pt-3 flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-md text-xs font-mono bg-white/[0.03] border border-white/[0.08] text-textPrimary">
+                  First-Principles Engineering
+                </span>
+                <span class="px-3 py-1 rounded-md text-xs font-mono bg-white/[0.03] border border-white/[0.08] text-textPrimary">
+                  ML &amp; Data Pipelines
+                </span>
+                <span class="px-3 py-1 rounded-md text-xs font-mono bg-white/[0.03] border border-white/[0.08] text-textPrimary">
+                  Clean Architecture
+                </span>
+              </div>
+            </div>
+
+            <!-- Profile Summary Card (5 cols) -->
+            <aside class="lg:col-span-5 glass-panel rounded-xl p-6 space-y-4 reveal in" aria-label="Nova Profile Summary" data-rv="1" style="--d: 0;">
+              <div class="flex items-center justify-between border-b border-white/[0.07] pb-3">
+                <p class="font-mono text-[11px] uppercase tracking-widest text-textMuted">SNAPSHOT</p>
+                <span class="flex items-center gap-3"><span class="text-xs font-mono text-accentGold">nova.config</span><span class="avatar avatar-56" data-img="IMG-04"><img data-img-key="IMG-04" class="img-tone" alt="Denji, side portrait — Nova's avatar" width="56" height="56" loading="lazy" decoding="async" src="assets/images/embedded-image-02.webp"></span></span>
+              </div>
+
+              <dl class="space-y-3.5 text-sm">
+                <div class="pb-3 border-b border-white/[0.05]">
+                  <dt class="font-mono text-[11px] uppercase tracking-wider text-textMuted mb-0.5">Role</dt>
+                  <dd id="profile-role" class="font-medium text-textPrimary">AI/ML Developer &amp; Software Engineer</dd>
+                </div>
+                <div class="pb-3 border-b border-white/[0.05]">
+                  <dt class="font-mono text-[11px] uppercase tracking-wider text-textMuted mb-0.5">Current Focus</dt>
+                  <dd id="profile-focus" class="text-textSecondary">Python engineering, classical ML pipelines, and deep learning with PyTorch</dd>
+                </div>
+                <div class="pb-3 border-b border-white/[0.05]">
+                  <dt class="font-mono text-[11px] uppercase tracking-wider text-textMuted mb-0.5">Interests</dt>
+                  <dd id="profile-interests" class="text-textSecondary">Artificial Intelligence, Machine Learning, Data Systems, Algorithms</dd>
+                </div>
+                <div>
+                  <dt class="font-mono text-[11px] uppercase tracking-wider text-textMuted mb-0.5">Location / Status</dt>
+                  <dd id="profile-location" class="font-mono text-xs text-accentGold">Open to collaborations &amp; internships (Editable)</dd>
+                </div>
+              </dl>
+            </aside>
+          </div>
+
+        </div>
+      </section>
+      <div class="chain-divider" aria-hidden="true"></div>
+
+      <!-- =================================================================== -->
+      <!-- 02 / TECH STACK — PERFECTLY ALIGNED, ZERO CLUTTER                   -->
+      <!-- =================================================================== -->
+      <section id="skills" class="py-20 sm:py-24 relative overflow-hidden">
+        <div class="stack-ghost" aria-hidden="true" data-img="IMG-02"><div class="parallax-layer" data-parallax="" style="transform: translate3d(0px, 24px, 0px);"><img data-img-key="IMG-02" class="img-tone img-ghost" alt="" width="736" height="680" loading="lazy" decoding="async" src="assets/images/embedded-image-03.webp"></div></div>
+        <div class="relative z-[1] max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <!-- Minimalist Section Header -->
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-7 border-b border-white/[0.07] mb-10">
+            <div>
+              <p class="eyebrow font-mono text-[11px] uppercase tracking-widest text-accentGold mb-1.5 reveal in" data-rv="1" style="--d: 0;">02 / STACK</p>
+              <h2 class="h-sweep font-display text-2xl sm:text-3xl font-bold text-textPrimary reveal in" data-rv="1" style="--d: 0;">Languages &amp; Libraries</h2>
+            </div>
+            <p class="font-mono text-xs text-textMuted">Core tools I use to build and experiment</p>
+          </div>
+
+          <div class="space-y-8">
+
+            <!-- GROUP 1: LANGUAGES -->
+            <div class="space-y-3">
+              <h3 class="font-mono text-[11px] uppercase tracking-widest text-textMuted">Languages</h3>
+
+              <!-- Perfectly Aligned 4-Column Grid on Desktop, 2-Column on Mobile -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
+                <!-- Python -->
+                <div class="skill-chip rounded-xl px-4 flex items-center gap-3.5 reveal in" data-rv="1" style="--d: 0;">
+                  <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 128 128" aria-hidden="true">
+                      <path fill="#5A9FD4" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"></path>
+                      <path fill="#FFD43B" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"></path>
+                    </svg>
+                  </div>
+                  <span class="font-display text-sm sm:text-[15px] font-semibold text-textPrimary truncate">Python</span>
+                </div>
+
+                <!-- C++ -->
+                <div class="skill-chip rounded-xl px-4 flex items-center gap-3.5 reveal in" data-rv="1" style="--d: 0;">
+                  <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 128 128" aria-hidden="true">
+                      <path fill="#659AD2" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"></path>
+                      <path fill="#004482" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"></path>
+                      <path fill="#FFFFFF" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"></path>
+                      <path fill="#FFFFFF" d="M95 61h-4v-4h-4v4h-4v4h4v4h4v-4h4v-4zM111 61h-4v-4h-4v4h-4v4h4v4h4v-4h4v-4z"></path>
+                    </svg>
+                  </div>
+                  <span class="font-display text-sm sm:text-[15px] font-semibold text-textPrimary truncate">C++</span>
+                </div>
+
+                <!-- C -->
+                <div class="skill-chip rounded-xl px-4 flex items-center gap-3.5 reveal in" data-rv="1" style="--d: 0;">
+                  <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 128 128" aria-hidden="true">
+                      <path fill="#659AD2" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"></path>
+                      <path fill="#03599C" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"></path>
+                      <path fill="#FFFFFF" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"></path>
+                    </svg>
+                  </div>
+                  <span class="font-display text-sm sm:text-[15px] font-semibold text-textPrimary truncate">C</span>
+                </div>
+
+                <!-- SQL -->
+                <div class="skill-chip rounded-xl px-4 flex items-center gap-3.5 reveal in" data-rv="1" style="--d: 0;">
+                  <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#D4A359" stroke-width="1.8" aria-hidden="true">
+                      <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
+                      <path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"></path>
+                      <path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"></path>
+                    </svg>
+                  </div>
+                  <span class="font-display text-sm sm:text-[15px] font-semibold text-textPrimary truncate">SQL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- GROUP 2: AI, ML & DATA LIBRARIES -->
+            <div class="space-y-3">
+              <h3 class="font-mono text-[11px] uppercase tracking-widest text-textMuted">AI / ML &amp; Data</h3>
+
+              <!-- Perfectly Aligned 5-Column Grid on Desktop, 2/3-Column on Tablet/Mobile -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5">
+                <!-- PyTorch -->
+                <div class="skill-chip rounded-xl px-4 flex items-center gap-3.5 reveal in" data-rv="1" style="--d: 0;">
+                  <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 128 128" aria-hidden="true">
+                      <path fill="#EE4C2C" d="M64 14l-18 18 7 7 11-11v20c-19.9 0-36 16.1-36 36s16.1 36 36 36 36-16.1 36-36c0-13.4-7.3-25.1-18.2-31.3l-7.2 7.2C83.7 64.3 89 73.5 89 84c0 13.8-11.2 25-25 25S39 97.8 39 84s11.2-25 25-25V14z"></path>
+                      <circle cx="79" cy="41" r="5.5" fill="#EE4C2C"></circle>
+                    </svg>
+                  </div>
+                  <span class="font-display text-sm sm:text-[15px] font-semibold text-textPrimary truncate">PyTorch</span>
+                </div>
+
+                <!-- Scikit-learn -->
+                <div class="skill-chip rounded-xl px-4 flex items-center gap-3.5 reveal in" data-rv="1" style="--d: 0;">
+                  <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 128 128" aria-hidden="true">
+                      <circle cx="45" cy="72" r="30" fill="#3499CD"></circle>
+                      <circle cx="82" cy="52" r="24" fill="#F89939"></circle>
+                      <text x="27" y="78" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="22" fill="#FFFFFF">sk</text>
+                    </svg>
+                  </div>
+                  <span class="font-display text-sm sm:text-[15px] font-semibold text-textPrimary truncate">Scikit-learn</span>
+                </div>
+
+                <!-- NumPy -->
+                <div class="skill-chip rounded-xl px-4 flex items-center gap-3.5 reveal in" data-rv="1" style="--d: 0;">
+                  <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 128 128" aria-hidden="true">
+                      <polygon fill="#4DABCF" points="60.2,29.5 38.4,18.5 14.8,30.4 37.3,41.8"></polygon>
+                      <polygon fill="#4DABCF" points="67.5,29.5 90.1,41.8 112.5,30.4 89,18.5"></polygon>
+                      <polygon fill="#4DABCF" points="63.9,36.8 40.8,48.6 63.9,60.3 87,48.6"></polygon>
+                      <polygon fill="#4DABCF" points="35.9,55.2 12,43.1 12,92.7 35.9,105.1"></polygon>
+                      <polygon fill="#4DABCF" points="60,67.6 42.3,58.6 42.3,108.4 60,117.5"></polygon>
+                      <polygon fill="#3776AB" points="67.8,67.6 67.8,117.5 115.8,93.2 115.8,43.2"></polygon>
+                    </svg>
+                  </div>
+                  <span class="font-display text-sm sm:text-[15px] font-semibold text-textPrimary truncate">NumPy</span>
+                </div>
+
+                <!-- Pandas -->
+                <div class="skill-chip rounded-xl px-4 flex items-center gap-3.5 reveal in" data-rv="1" style="--d: 0;">
+                  <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 128 128" aria-hidden="true">
+                      <rect x="44" y="16" width="12" height="26" rx="2" fill="#F3F4F6"></rect>
+                      <rect x="44" y="72" width="12" height="28" rx="2" fill="#F3F4F6"></rect>
+                      <rect x="44" y="50" width="12" height="14" rx="2" fill="#D4A359"></rect>
+                      <rect x="72" y="28" width="12" height="26" rx="2" fill="#F3F4F6"></rect>
+                      <rect x="72" y="84" width="12" height="26" rx="2" fill="#F3F4F6"></rect>
+                      <rect x="72" y="62" width="12" height="14" rx="2" fill="#7A9A8B"></rect>
+                      <rect x="22" y="34" width="12" height="60" rx="2" fill="#F3F4F6"></rect>
+                      <rect x="94" y="34" width="12" height="60" rx="2" fill="#F3F4F6"></rect>
+                    </svg>
+                  </div>
+                  <span class="font-display text-sm sm:text-[15px] font-semibold text-textPrimary truncate">Pandas</span>
+                </div>
+
+                <!-- Matplotlib -->
+                <div class="skill-chip rounded-xl px-4 flex items-center gap-3.5 col-span-2 sm:col-span-1 reveal in" data-rv="1" style="--d: 0;">
+                  <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 128 128" aria-hidden="true">
+                      <circle cx="64" cy="64" r="50" fill="none" stroke="#7A9A8B" stroke-width="6"></circle>
+                      <circle cx="64" cy="64" r="32" fill="none" stroke="#D4A359" stroke-width="4" stroke-dasharray="6 4"></circle>
+                      <path d="M64 64 L98 34 A46 46 0 0 1 108 68 Z" fill="#D4A359" opacity="0.88"></path>
+                      <path d="M64 64 L32 42 A38 38 0 0 1 64 26 Z" fill="#7A9A8B" opacity="0.9"></path>
+                      <path d="M64 64 L44 96 A38 38 0 0 1 28 64 Z" fill="#5A9FD4" opacity="0.85"></path>
+                      <circle cx="64" cy="64" r="5" fill="#F3F4F6"></circle>
+                    </svg>
+                  </div>
+                  <span class="font-display text-sm sm:text-[15px] font-semibold text-textPrimary truncate">Matplotlib</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <div class="chain-divider" aria-hidden="true"></div>
+
+      <!-- =================================================================== -->
+      <!-- 03 / PROJECTS SECTION                                               -->
+      <!-- =================================================================== -->
+      <section id="projects" class="py-20 sm:py-24 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <!-- Header & Filters -->
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-7 border-b border-white/[0.07] mb-10">
+            <div>
+              <p class="eyebrow font-mono text-[11px] uppercase tracking-widest text-accentGold mb-1.5 reveal in" data-rv="1" style="--d: 0;">03 / PROJECTS</p>
+              <h2 class="h-sweep font-display text-2xl sm:text-3xl font-bold text-textPrimary reveal in" data-rv="1" style="--d: 0;">Selected Work</h2>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div role="tablist" aria-label="Filter projects" class="flex flex-wrap items-center gap-2">
+              <button type="button" role="tab" id="filter-btn-all" aria-selected="true" onclick="filterProjects('All')" class="project-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-colors bg-accentGold text-[#090B0E]">
+                All (5)
+              </button>
+              <button type="button" role="tab" id="filter-btn-ai-ml" aria-selected="false" onclick="filterProjects('AI / ML')" class="project-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-colors bg-white/[0.03] text-textSecondary border border-white/[0.08] hover:text-textPrimary">
+                AI / ML
+              </button>
+              <button type="button" role="tab" id="filter-btn-data-science" aria-selected="false" onclick="filterProjects('Data Science')" class="project-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-colors bg-white/[0.03] text-textSecondary border border-white/[0.08] hover:text-textPrimary">
+                Data Science
+              </button>
+              <button type="button" role="tab" id="filter-btn-software-development" aria-selected="false" onclick="filterProjects('Software Development')" class="project-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-colors bg-white/[0.03] text-textSecondary border border-white/[0.08] hover:text-textPrimary">
+                Systems
+              </button>
+              <button type="button" role="tab" id="filter-btn-experiments" aria-selected="false" onclick="filterProjects('Experiments')" class="project-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-colors bg-white/[0.03] text-textSecondary border border-white/[0.08] hover:text-textPrimary">
+                Experiments
+              </button>
+            </div>
+          </div>
+
+          <!-- IMG-01 cinematic banner -->
+          <div class="img-frame mb-10 h-[140px] sm:h-[180px] lg:h-[240px] reveal in" data-img="IMG-01" data-rv="1" style="--d: 0;">
+            <div class="parallax-layer" data-parallax="" style="transform: translate3d(0px, 24px, 0px);"><img data-img-key="IMG-01" class="img-tone" alt="Chainsaw-headed warrior in a muted cinematic scene" width="1792" height="1024" loading="lazy" decoding="async" src=""></div>
+            <div class="ember-eye" aria-hidden="true"></div>
+            <p class="img-caption font-mono">// ship &gt; perfect</p>
+          </div>
+          <!-- Dynamic Projects Container -->
+          <div id="projects-grid-container"><div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <article class="glass-panel reveal rounded-xl p-6 sm:p-7 flex flex-col justify-between space-y-5 md:col-span-2 project-featured border-l-2 border-l-accentGold/60 in" data-rv="1" style="--d: 0;">
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between gap-2 text-xs font-mono">
+                <span class="text-accentGold">AI / ML</span>
+                <span class="flex items-center gap-2 text-textMuted"><span class="status-dot" aria-hidden="true"></span>v1.2 · Blueprint<span class="font-mono text-textMuted/70 pl-2 ml-1 border-l border-white/10">01</span></span>
+              </div>
+              <h3 class="font-display text-lg sm:text-xl font-bold text-textPrimary leading-snug">
+                Tabular ML Pipeline &amp; Cross-Validation Harness
+              </h3>
+              <p class="text-sm text-textSecondary leading-relaxed">
+                Modular Python &amp; Scikit-learn workflow for leak-free feature engineering, stratified cross-validation, and automated diagnostic plots.
+              </p>
+            </div>
+
+            <div class="pt-3.5 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-3">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Python</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Scikit-learn</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Pandas</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">NumPy</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Matplotlib</span>
+              </div>
+              <button type="button" onclick="openProjectModal('proj-tabular-ml-pipeline')" class="inline-flex items-center gap-1 text-xs font-mono font-medium text-accentGold hover:underline">
+                <span>Inspect</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+        
+          <article class="glass-panel reveal rounded-xl p-6 flex flex-col justify-between space-y-5 in" data-rv="1" style="--d: 0;">
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between gap-2 text-xs font-mono">
+                <span class="text-accentGold">AI / ML</span>
+                <span class="flex items-center gap-2 text-textMuted"><span class="status-dot" aria-hidden="true"></span>Research · Blueprint<span class="font-mono text-textMuted/70 pl-2 ml-1 border-l border-white/10">02</span></span>
+              </div>
+              <h3 class="font-display text-lg sm:text-xl font-bold text-textPrimary leading-snug">
+                PyTorch Autograd &amp; Custom Training Loop Lab
+              </h3>
+              <p class="text-sm text-textSecondary leading-relaxed">
+                Clean PyTorch implementations exploring tensor operations, custom Dataset loaders, cosine annealing schedules, and gradient norm tracking.
+              </p>
+            </div>
+
+            <div class="pt-3.5 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-3">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Python</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">PyTorch</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">NumPy</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Matplotlib</span>
+              </div>
+              <button type="button" onclick="openProjectModal('proj-pytorch-training-lab')" class="inline-flex items-center gap-1 text-xs font-mono font-medium text-accentGold hover:underline">
+                <span>Inspect</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+        
+          <article class="glass-panel reveal rounded-xl p-6 flex flex-col justify-between space-y-5 in" data-rv="1" style="--d: 0;">
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between gap-2 text-xs font-mono">
+                <span class="text-accentGold">Data Science</span>
+                <span class="flex items-center gap-2 text-textMuted"><span class="status-dot" aria-hidden="true"></span>Utility · Blueprint<span class="font-mono text-textMuted/70 pl-2 ml-1 border-l border-white/10">03</span></span>
+              </div>
+              <h3 class="font-display text-lg sm:text-xl font-bold text-textPrimary leading-snug">
+                Automated EDA &amp; Statistical Diagnostics Toolkit
+              </h3>
+              <p class="text-sm text-textSecondary leading-relaxed">
+                Reusable Python toolkit built on Pandas and Matplotlib for rapid dataset profiling, missingness analysis, and correlation diagnostics.
+              </p>
+            </div>
+
+            <div class="pt-3.5 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-3">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Python</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Pandas</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">NumPy</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Matplotlib</span>
+              </div>
+              <button type="button" onclick="openProjectModal('proj-eda-visualization-toolkit')" class="inline-flex items-center gap-1 text-xs font-mono font-medium text-accentGold hover:underline">
+                <span>Inspect</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+        
+          <article class="glass-panel reveal rounded-xl p-6 flex flex-col justify-between space-y-5 in" data-rv="1" style="--d: 0;">
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between gap-2 text-xs font-mono">
+                <span class="text-accentGold">Software Development</span>
+                <span class="flex items-center gap-2 text-textMuted"><span class="status-dot" aria-hidden="true"></span>Systems · Blueprint<span class="font-mono text-textMuted/70 pl-2 ml-1 border-l border-white/10">04</span></span>
+              </div>
+              <h3 class="font-display text-lg sm:text-xl font-bold text-textPrimary leading-snug">
+                High-Performance Data Structures &amp; Matrix Ops in C++
+              </h3>
+              <p class="text-sm text-textSecondary leading-relaxed">
+                From-scratch implementations of cache-friendly matrix multiplication, priority queues, and graph algorithms in modern C++.
+              </p>
+            </div>
+
+            <div class="pt-3.5 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-3">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">C++</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">C</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Python</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">NumPy</span>
+              </div>
+              <button type="button" onclick="openProjectModal('proj-systems-algorithms-cpp')" class="inline-flex items-center gap-1 text-xs font-mono font-medium text-accentGold hover:underline">
+                <span>Inspect</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+        
+          <article class="glass-panel reveal rounded-xl p-6 flex flex-col justify-between space-y-5 in" data-rv="1" style="--d: 0;">
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between gap-2 text-xs font-mono">
+                <span class="text-accentGold">Experiments</span>
+                <span class="flex items-center gap-2 text-textMuted"><span class="status-dot" aria-hidden="true"></span>Study · Blueprint<span class="font-mono text-textMuted/70 pl-2 ml-1 border-l border-white/10">05</span></span>
+              </div>
+              <h3 class="font-display text-lg sm:text-xl font-bold text-textPrimary leading-snug">
+                Core ML Estimators from Scratch in Pure NumPy
+              </h3>
+              <p class="text-sm text-textSecondary leading-relaxed">
+                Vectorized NumPy implementations of Linear/Logistic Regression, PCA, and Decision Trees verified against Scikit-learn.
+              </p>
+            </div>
+
+            <div class="pt-3.5 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-3">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Python</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">NumPy</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Scikit-learn</span><span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Matplotlib</span>
+              </div>
+              <button type="button" onclick="openProjectModal('proj-classical-ml-from-scratch')" class="inline-flex items-center gap-1 text-xs font-mono font-medium text-accentGold hover:underline">
+                <span>Inspect</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+        </div></div>
+
+        </div>
+      </section>
+      <div class="chain-divider" aria-hidden="true"></div>
+
+      <!-- =================================================================== -->
+      <!-- 04 / EXPERIENCE SECTION                                             -->
+      <!-- =================================================================== -->
+      <section id="experience" class="py-20 sm:py-24 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <!-- Section Header -->
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-7 border-b border-white/[0.07] mb-8">
+            <div>
+              <p class="eyebrow font-mono text-[11px] uppercase tracking-widest text-accentGold mb-1.5 reveal in" data-rv="1" style="--d: 0;">04 / JOURNEY</p>
+              <h2 class="h-sweep font-display text-2xl sm:text-3xl font-bold text-textPrimary reveal in" data-rv="1" style="--d: 0;">Experience &amp; Milestones</h2>
+            </div>
+
+            <!-- Timeline Filter Pills -->
+            <div class="flex flex-wrap items-center gap-2">
+              <button type="button" id="exp-filter-all" onclick="filterExperience('All')" class="exp-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono bg-accentGold text-[#090B0E] font-medium">
+                All
+              </button>
+              <button type="button" id="exp-filter-independent-projects" onclick="filterExperience('Independent Projects')" class="exp-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono bg-white/[0.03] text-textSecondary border border-white/[0.08] hover:text-textPrimary">
+                Projects
+              </button>
+              <button type="button" id="exp-filter-technical-learning-milestones" onclick="filterExperience('Technical Learning Milestones')" class="exp-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono bg-white/[0.03] text-textSecondary border border-white/[0.08] hover:text-textPrimary">
+                Milestones
+              </button>
+              <button type="button" id="exp-filter-research-exploration" onclick="filterExperience('Research &amp; Exploration')" class="exp-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono bg-white/[0.03] text-textSecondary border border-white/[0.08] hover:text-textPrimary">
+                Foundations
+              </button>
+            </div>
+          </div>
+
+          <!-- Vertical Timeline Container -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <aside class="hidden lg:block lg:col-span-4">
+            <figure class="lg:sticky top-28">
+              <div class="img-frame aspect-[4/5] reveal in" data-img="IMG-04" data-rv="1" style="--d: 0;"><img data-img-key="IMG-04" class="img-tone" alt="Denji glancing sideways, messy blond hair, white shirt with suspenders" width="560" height="562" loading="lazy" decoding="async" src="assets/images/embedded-image-02.webp"></div>
+              <figcaption class="font-mono text-[11px] text-textMuted mt-3">// still shipping, still learning</figcaption>
+            </figure>
+          </aside>
+          <div class="lg:col-span-8">
+          <div id="experience-timeline-container" class="relative pl-6 sm:pl-8 timeline-line space-y-5">
+          <div class="relative group reveal in" data-rv="1" style="--d: 0;">
+            <span class="tl-dot absolute -left-[29px] sm:-left-[37px] top-2 w-2.5 h-2.5 rounded-full bg-[#090B0E] border-2 border-accentGold"></span>
+            <article class="glass-panel rounded-xl p-5 sm:p-6 space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+                <span class="text-accentGold">AI/ML &amp; Python Systems Builder</span>
+                <span class="text-textMuted">2025 — Present · Remote</span>
+              </div>
+              <p class="text-xs font-mono text-textSecondary">Self-Directed Engineering Portfolio</p>
+              <p class="text-sm text-textSecondary leading-relaxed">Designing end-to-end machine learning workflows, exploratory data analysis toolkits, and neural network training experiments in Python.</p>
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Python</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">PyTorch</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Scikit-learn</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Pandas</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">NumPy</span>
+              </div>
+            </article>
+          </div>
+        
+          <div class="relative group reveal in" data-rv="1" style="--d: 0;">
+            <span class="tl-dot absolute -left-[29px] sm:-left-[37px] top-2 w-2.5 h-2.5 rounded-full bg-[#090B0E] border-2 border-accentGold"></span>
+            <article class="glass-panel rounded-xl p-5 sm:p-6 space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+                <span class="text-accentGold">Machine Learning &amp; Statistical Foundations</span>
+                <span class="text-textMuted">2024 — Present · Independent</span>
+              </div>
+              <p class="text-xs font-mono text-textSecondary">Algorithmic Implementation &amp; Study</p>
+              <p class="text-sm text-textSecondary leading-relaxed">Implementing core estimators from scratch in NumPy and studying cross-validation design, regularization, and optimization dynamics.</p>
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Python</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">NumPy</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Scikit-learn</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Matplotlib</span>
+              </div>
+            </article>
+          </div>
+        
+          <div class="relative group reveal in" data-rv="1" style="--d: 0;">
+            <span class="tl-dot absolute -left-[29px] sm:-left-[37px] top-2 w-2.5 h-2.5 rounded-full bg-[#090B0E] border-2 border-accentGold"></span>
+            <article class="glass-panel rounded-xl p-5 sm:p-6 space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+                <span class="text-accentGold">Systems Programming &amp; Data Structures</span>
+                <span class="text-textMuted">2023 — 2024 · Academic / Self-Paced</span>
+              </div>
+              <p class="text-xs font-mono text-textSecondary">Computer Science Fundamentals</p>
+              <p class="text-sm text-textSecondary leading-relaxed">Built a strong programming foundation in C, C++, and SQL focusing on memory management, algorithmic complexity, and clean modular code.</p>
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">C++</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">C</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">SQL</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/[0.04] text-textSecondary border border-white/[0.07]">Python</span>
+              </div>
+            </article>
+          </div>
+        </div>
+          </div>
+        </div>
+
+        </div>
+      </section>
+      <div class="chain-divider" aria-hidden="true"></div>
+
+      <!-- =================================================================== -->
+      <!-- 05 / BLOGS / NOTES SECTION                                          -->
+      <!-- =================================================================== -->
+      <section id="blogs" class="py-20 sm:py-24 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <!-- Section Header -->
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pb-7 border-b border-white/[0.07] mb-10">
+            <div>
+              <p class="eyebrow font-mono text-[11px] uppercase tracking-widest text-accentGold mb-1.5 reveal in" data-rv="1" style="--d: 0;">05 / NOTES</p>
+              <h2 class="h-sweep font-display text-2xl sm:text-3xl font-bold text-textPrimary reveal in" data-rv="1" style="--d: 0;">Technical Writing</h2>
+            </div>
+
+            <!-- View Switcher -->
+            <div class="flex items-center gap-1 bg-white/[0.03] p-1 rounded-lg border border-white/[0.08] self-start sm:self-auto">
+              <button type="button" id="btn-blog-mode-drafts" onclick="setBlogViewMode('drafts')" class="px-3 py-1.5 rounded-md text-xs font-mono font-medium transition-colors bg-accentGold text-[#090B0E]">
+                Draft Notes (3)
+              </button>
+              <button type="button" id="btn-blog-mode-status" onclick="setBlogViewMode('status')" class="px-3 py-1.5 rounded-md text-xs font-mono font-medium transition-colors text-textSecondary hover:text-textPrimary">
+                Status
+              </button>
+            </div>
+          </div>
+
+          <!-- Blog Content Container -->
+          <div class="img-frame mb-8 h-[120px] sm:h-[150px] reveal in" data-img="IMG-06" data-rv="1" style="--d: 0;">
+            <img data-img-key="IMG-06" class="img-tone strip-img" alt="Denji in a cinematic night scene" width="1983" height="793" loading="lazy" decoding="async" src="">
+            <p class="img-caption font-mono">$ cat notes/*.md</p>
+          </div>
+          <div id="blogs-content-container">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          
+              <article class="glass-panel reveal relative overflow-hidden rounded-xl p-5 flex flex-col justify-between space-y-4 in" data-rv="1" style="--d: 0;">
+                <span class="note-wm font-mono" aria-hidden="true">#01</span>
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between text-xs font-mono text-textMuted">
+                    <span class="text-accentGold">Note #01 · Draft</span>
+                    <span>6 min read</span>
+                  </div>
+                  <h3 class="font-display text-base font-bold text-textPrimary leading-snug">
+                    Vectorizing Gradient Descent in Pure NumPy
+                  </h3>
+                  <p class="text-xs sm:text-sm text-textSecondary leading-relaxed">Translating multivariable calculus equations into fast, loop-free NumPy array broadcasting with loss contour visualizations.</p>
+                </div>
+                <div class="pt-3 border-t border-white/[0.06] flex items-center justify-between">
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.04] text-textMuted border border-white/[0.06]">NumPy</span><span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.04] text-textMuted border border-white/[0.06]">Optimization</span>
+                  </div>
+                  <button type="button" onclick="openBlogModal('blog-draft-1')" class="text-xs font-mono text-accentGold hover:underline">
+                    Read ↗
+                  </button>
+                </div>
+              </article>
+            
+              <article class="glass-panel reveal relative overflow-hidden rounded-xl p-5 flex flex-col justify-between space-y-4 in" data-rv="1" style="--d: 0;">
+                <span class="note-wm font-mono" aria-hidden="true">#02</span>
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between text-xs font-mono text-textMuted">
+                    <span class="text-accentGold">Note #02 · Draft</span>
+                    <span>5 min read</span>
+                  </div>
+                  <h3 class="font-display text-base font-bold text-textPrimary leading-snug">
+                    Preventing Data Leakage in Cross-Validation Pipelines
+                  </h3>
+                  <p class="text-xs sm:text-sm text-textSecondary leading-relaxed">Why fitting scalers or imputers outside fold splits silently inflates validation scores, and how Pipeline objects solve it.</p>
+                </div>
+                <div class="pt-3 border-t border-white/[0.06] flex items-center justify-between">
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.04] text-textMuted border border-white/[0.06]">Scikit-learn</span><span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.04] text-textMuted border border-white/[0.06]">Best Practices</span>
+                  </div>
+                  <button type="button" onclick="openBlogModal('blog-draft-2')" class="text-xs font-mono text-accentGold hover:underline">
+                    Read ↗
+                  </button>
+                </div>
+              </article>
+            
+              <article class="glass-panel reveal relative overflow-hidden rounded-xl p-5 flex flex-col justify-between space-y-4 in" data-rv="1" style="--d: 0;">
+                <span class="note-wm font-mono" aria-hidden="true">#03</span>
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between text-xs font-mono text-textMuted">
+                    <span class="text-accentGold">Note #03 · Draft</span>
+                    <span>7 min read</span>
+                  </div>
+                  <h3 class="font-display text-base font-bold text-textPrimary leading-snug">
+                    Inside PyTorch Autograd &amp; Computational Graphs
+                  </h3>
+                  <p class="text-xs sm:text-sm text-textSecondary leading-relaxed">Understanding how dynamic computation graphs track tensor operations, why zero_grad() matters, and inspecting gradient flow.</p>
+                </div>
+                <div class="pt-3 border-t border-white/[0.06] flex items-center justify-between">
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.04] text-textMuted border border-white/[0.06]">PyTorch</span><span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.04] text-textMuted border border-white/[0.06]">Deep Learning</span>
+                  </div>
+                  <button type="button" onclick="openBlogModal('blog-draft-3')" class="text-xs font-mono text-accentGold hover:underline">
+                    Read ↗
+                  </button>
+                </div>
+              </article>
+            
+        </div>
+      </div>
+
+        </div>
+      </section>
+      <div class="chain-divider" aria-hidden="true"></div>
+
+      <!-- =================================================================== -->
+      <!-- 06 / CONTACT SECTION                                                -->
+      <!-- =================================================================== -->
+      <section id="contact" class="py-20 sm:py-24 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+
+            <!-- Left: Info & Direct Channels (5 cols) -->
+            <div class="lg:col-span-5 space-y-6">
+              <div>
+                <p class="eyebrow font-mono text-[11px] uppercase tracking-widest text-accentGold mb-1.5 reveal in" data-rv="1" style="--d: 0;">06 / CONTACT</p>
+                <h2 id="contact-heading" class="h-sweep font-display text-2xl sm:text-3xl font-bold text-textPrimary leading-tight reveal in" data-rv="1" style="--d: 0;">
+                  Let's build something meaningful.
+                </h2>
+              </div>
+
+              <p id="contact-supporting" class="text-textSecondary text-sm sm:text-base leading-relaxed">
+                Open to technical conversations, open-source collaborations, and engineering opportunities. You can update these placeholder links anytime via <span class="text-textPrimary font-mono text-xs">Edit Info</span>.
+              </p>
+
+              <div class="img-frame aspect-[4/3] reveal in" data-img="IMG-03" data-rv="1" style="--d: 0;">
+                <img data-img-key="IMG-03" class="img-tone" alt="Chainsaw Man with a red helmet and tongue out, giving a thumbs up against a night city" width="736" height="736" loading="lazy" decoding="async" src="assets/images/embedded-image-04.webp">
+                <span class="img-chip font-mono">thumbs up ↗ let's build</span>
+              </div>
+              <!-- Direct Profile Links -->
+              <div class="pt-1 space-y-3">
+                <!-- Email -->
+                <div class="glass-panel p-3.5 rounded-xl flex items-center justify-between gap-3 reveal in" data-rv="1" style="--d: 0;">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <div class="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-accentGold shrink-0">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                      </svg>
+                    </div>
+                    <div class="min-w-0">
+                      <p class="text-[10px] font-mono text-textMuted uppercase tracking-wider">Email</p>
+                      <p id="social-email-display" class="text-xs sm:text-sm font-medium text-textPrimary truncate"><a href="mailto:nova.dev@example.com" class="text-textPrimary hover:text-accentGold transition-colors">nova.dev@example.com</a></p>
+                    </div>
+                  </div>
+                  <button type="button" onclick="openDataEditorModal('socials')" class="px-2.5 py-1 text-xs font-mono text-accentGold hover:underline shrink-0">
+                    Edit
+                  </button>
+                </div>
+
+                <!-- GitHub -->
+                <div class="glass-panel p-3.5 rounded-xl flex items-center justify-between gap-3 reveal in" data-rv="1" style="--d: 0;">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <div class="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-accentGold shrink-0">
+                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                      </svg>
+                    </div>
+                    <div class="min-w-0">
+                      <p class="text-[10px] font-mono text-textMuted uppercase tracking-wider">GitHub</p>
+                      <p id="social-github-display" class="text-xs sm:text-sm font-medium text-textPrimary truncate"><a href="https://github.com/nova-ml" target="_blank" rel="noopener noreferrer" class="text-textPrimary hover:text-accentGold transition-colors">github.com/nova-ml ↗</a></p>
+                    </div>
+                  </div>
+                  <button type="button" onclick="openDataEditorModal('socials')" class="px-2.5 py-1 text-xs font-mono text-accentGold hover:underline shrink-0">
+                    Edit
+                  </button>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="glass-panel p-3.5 rounded-xl flex items-center justify-between gap-3 reveal in" data-rv="1" style="--d: 0;">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <div class="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-accentGold shrink-0">
+                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+                      </svg>
+                    </div>
+                    <div class="min-w-0">
+                      <p class="text-[10px] font-mono text-textMuted uppercase tracking-wider">LinkedIn</p>
+                      <p id="social-linkedin-display" class="text-xs sm:text-sm font-medium text-textPrimary truncate"><a href="https://linkedin.com/in/nova-dev" target="_blank" rel="noopener noreferrer" class="text-textPrimary hover:text-accentGold transition-colors">linkedin.com/in/nova-dev ↗</a></p>
+                    </div>
+                  </div>
+                  <button type="button" onclick="openDataEditorModal('socials')" class="px-2.5 py-1 text-xs font-mono text-accentGold hover:underline shrink-0">
+                    Edit
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Minimalist Contact Form (7 cols) -->
+            <div class="lg:col-span-7">
+              <div class="glass-panel rounded-xl p-6 sm:p-8 reveal in" data-rv="1" style="--d: 0;">
+                <h3 class="font-display text-lg font-bold text-textPrimary mb-1">Direct Message</h3>
+                <p class="text-xs text-textSecondary mb-6">
+                  Fill out the fields below to format an email or copy the message directly.
+                </p>
+
+                <form id="contact-form" onsubmit="handleContactSubmit(event)" novalidate="" class="space-y-4">
+                  <!-- Honeypot -->
+                  <div class="hidden" aria-hidden="true">
+                    <label for="contact-bot-field">Do not fill this</label>
+                    <input type="text" id="contact-bot-field" name="botField" tabindex="-1" autocomplete="off">
+                  </div>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label for="contact-name" class="block text-[11px] font-mono uppercase tracking-wider text-textSecondary mb-1.5">
+                        Name <span class="text-accentGold">*</span>
+                      </label>
+                      <input type="text" id="contact-name" required="" placeholder="Your name" class="w-full px-3.5 py-2.5 rounded-lg bg-black/40 border border-white/10 text-textPrimary placeholder-textMuted text-sm focus:border-accentGold">
+                      <p id="error-contact-name" class="mt-1 text-xs font-mono text-[#E89B8C] hidden" role="alert"></p>
+                    </div>
+
+                    <div>
+                      <label for="contact-email" class="block text-[11px] font-mono uppercase tracking-wider text-textSecondary mb-1.5">
+                        Email <span class="text-accentGold">*</span>
+                      </label>
+                      <input type="email" id="contact-email" required="" placeholder="you@example.com" class="w-full px-3.5 py-2.5 rounded-lg bg-black/40 border border-white/10 text-textPrimary placeholder-textMuted text-sm focus:border-accentGold">
+                      <p id="error-contact-email" class="mt-1 text-xs font-mono text-[#E89B8C] hidden" role="alert"></p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="contact-subject" class="block text-[11px] font-mono uppercase tracking-wider text-textSecondary mb-1.5">
+                      Subject <span class="text-accentGold">*</span>
+                    </label>
+                    <input type="text" id="contact-subject" required="" placeholder="Project discussion, collaboration, or opportunity" class="w-full px-3.5 py-2.5 rounded-lg bg-black/40 border border-white/10 text-textPrimary placeholder-textMuted text-sm focus:border-accentGold">
+                    <p id="error-contact-subject" class="mt-1 text-xs font-mono text-[#E89B8C] hidden" role="alert"></p>
+                  </div>
+
+                  <div>
+                    <label for="contact-message" class="block text-[11px] font-mono uppercase tracking-wider text-textSecondary mb-1.5">
+                      Message <span class="text-accentGold">*</span>
+                    </label>
+                    <textarea id="contact-message" rows="4" required="" placeholder="Share details about what you'd like to build or discuss..." class="w-full px-3.5 py-2.5 rounded-lg bg-black/40 border border-white/10 text-textPrimary placeholder-textMuted text-sm focus:border-accentGold"></textarea>
+                    <p id="error-contact-message" class="mt-1 text-xs font-mono text-[#E89B8C] hidden" role="alert"></p>
+                  </div>
+
+                  <div class="pt-2 flex flex-wrap items-center justify-between gap-4">
+                    <button type="submit" id="btn-contact-submit" class="btn-rev inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold text-sm bg-accentGold text-[#090B0E] hover:bg-accentGoldHover transition-colors">
+                      <span>Prepare Message</span>
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                      </svg>
+                    </button>
+
+                    <button type="button" onclick="resetContactForm()" class="px-3 py-2 text-xs font-mono text-textMuted hover:text-textPrimary transition-colors">
+                      Clear
+                    </button>
+                  </div>
+
+                  <!-- Feedback Box -->
+                  <div id="contact-feedback-box" class="mt-4 p-4 rounded-xl bg-black/50 border border-accentGold/50" role="status" aria-live="polite">
+                    <p id="contact-feedback-title" class="font-display text-sm font-semibold text-textPrimary mb-1">Message Ready</p>
+                    <p id="contact-feedback-desc" class="text-xs text-textSecondary mb-3">Open your default mail client or copy the formatted message below.</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a id="contact-mailto-link" href="mailto:nova.dev%40example.com?subject=%5BNova%20Portfolio%5D%20SGD&amp;body=From%3A%20sdf%20%3Cafsg456%40gmail.com%3E%0ASubject%3A%20SGD%0A%0Agswegnyte%20we5y%20asdg" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-mono font-semibold bg-accentGold text-[#090B0E]">
+                        <span>Open Mail Client ↗</span>
+                      </a>
+                      <button type="button" onclick="copyFormattedContactMessage()" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-mono bg-white/10 text-textPrimary border border-white/10 hover:border-accentGold">
+                        <span>Copy Message</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- =================================================================== -->
+    <!-- FOOTER                                                              -->
+    <!-- =================================================================== -->
+    <footer class="border-t border-white/[0.06] py-10 text-sm text-textSecondary bg-[#090B0E]/90 backdrop-blur-md">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+          <div class="flex items-center gap-3">
+            <span class="avatar avatar-28" data-img="IMG-00"><img data-img-key="IMG-00" alt="Nova avatar" width="28" height="28" loading="lazy" decoding="async" src="assets/images/embedded-image-05.webp"></span>
+            <a href="#top" class="font-display text-lg font-bold tracking-tight text-textPrimary">
+              NOVA<span class="nova-dot text-accentGold">.</span>
+            </a>
+            <span class="text-white/15">|</span>
+            <p class="text-xs font-mono text-textMuted">
+              AI/ML &amp; Software Engineering Portfolio
+            </p>
+          </div>
+
+          <div class="flex items-center gap-5 text-xs font-mono text-textMuted">
+            <span>© <span id="footer-year">2026</span> Nova</span>
+            <a href="#top" class="inline-flex items-center gap-1 text-textSecondary hover:text-accentGold transition-colors">
+              <span>Top</span>
+              <span aria-hidden="true">↑</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 pt-5 border-t border-white/[0.06]">
+        <p class="text-[11px] font-mono text-textMuted">Character art © Tatsuki Fujimoto / MAPPA — fan tribute, not affiliated.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- MODALS (PROJECT DETAIL, BLOG READER, COMMAND PALETTE, DATA EDITOR) -->
+  <!-- =================================================================== -->
+
+  <!-- Project Detail Modal -->
+  <div id="project-detail-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-md p-4 sm:p-6 md:p-10" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="max-w-3xl mx-auto rounded-2xl glass-panel border border-white/15 shadow-2xl overflow-hidden my-4 bg-[#101419]/98">
+      <div class="sticky top-0 z-20 px-6 py-4 bg-[#101419]/98 backdrop-blur border-b border-white/10 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <span id="modal-project-category" class="px-2.5 py-0.5 rounded text-xs font-mono bg-white/5 text-accentGold border border-white/10"></span>
+          <span id="modal-project-status" class="px-2.5 py-0.5 rounded text-xs font-mono bg-white/5 text-textSecondary border border-white/10"></span>
+        </div>
+        <button type="button" onclick="closeProjectModal()" class="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-textSecondary hover:text-textPrimary border border-white/10 font-mono text-xs px-3" aria-label="Close project case study">
+          ESC ✕
+        </button>
+      </div>
+      <div id="modal-project-body" class="p-6 sm:p-8 space-y-6 text-sm">
+        <h3 id="modal-project-title" class="font-display text-2xl font-bold text-textPrimary">Project Details</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Reader Modal -->
+  <div id="blog-reader-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-md p-4 sm:p-6 md:p-10" role="dialog" aria-modal="true" aria-labelledby="modal-blog-title">
+    <div class="max-w-3xl mx-auto rounded-2xl glass-panel border border-white/15 shadow-2xl overflow-hidden my-4 bg-[#101419]/98">
+      <div class="sticky top-0 z-20 px-6 py-4 bg-[#101419]/98 backdrop-blur border-b border-white/10 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-accentGold/15 text-accentGold border border-accentGold/30">
+            DRAFT NOTE
+          </span>
+          <span id="modal-blog-readtime" class="text-xs font-mono text-textSecondary"></span>
+        </div>
+        <button type="button" onclick="closeBlogModal()" class="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-textSecondary hover:text-textPrimary border border-white/10 font-mono text-xs px-3" aria-label="Close article reader">
+          ESC ✕
+        </button>
+      </div>
+      <div id="modal-blog-body" class="p-6 sm:p-8">
+        <h3 id="modal-blog-title" class="font-display text-2xl font-bold text-textPrimary">Technical Note</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Palette Modal -->
+  <div id="cmd-palette-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/75 backdrop-blur-md p-4 pt-16 sm:pt-24" role="dialog" aria-modal="true" aria-label="Quick Navigation Command Palette">
+    <div class="max-w-lg mx-auto rounded-2xl glass-panel border border-white/15 shadow-2xl overflow-hidden bg-[#101419]/98">
+      <div class="p-3.5 border-b border-white/10 flex items-center gap-3">
+        <svg class="w-4 h-4 text-accentGold shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z"></path>
+        </svg>
+        <input type="text" id="cmd-palette-input" oninput="renderCommandPaletteItems(this.value)" placeholder="Jump to section or action..." class="w-full bg-transparent text-sm text-textPrimary placeholder-textMuted focus:outline-none" aria-label="Filter navigation commands">
+        <button type="button" onclick="closeCommandPalette()" class="px-2 py-0.5 text-[11px] font-mono bg-white/5 text-textSecondary rounded border border-white/10">
+          ESC
+        </button>
+      </div>
+      <div id="cmd-palette-list" class="max-h-80 overflow-y-auto p-2 space-y-1"></div>
+    </div>
+  </div>
+
+  <!-- Configuration Editor Modal -->
+  <div id="data-editor-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-md p-4 sm:p-6 md:p-10" role="dialog" aria-modal="true" aria-labelledby="data-editor-title">
+    <div class="max-w-2xl mx-auto rounded-2xl glass-panel border border-white/15 shadow-2xl overflow-hidden my-4 bg-[#101419]/98">
+      <div class="px-6 py-4 bg-white/[0.03] border-b border-white/10 flex items-center justify-between gap-4">
+        <div>
+          <span class="font-mono text-[10px] uppercase tracking-widest text-accentGold">PORTFOLIO CONFIG</span>
+          <h3 id="data-editor-title" class="font-display text-lg font-bold text-textPrimary">Edit Placeholder Information</h3>
+        </div>
+        <button type="button" onclick="closeDataEditorModal()" class="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs font-mono text-textSecondary hover:text-textPrimary">
+          Close ✕
+        </button>
+      </div>
+
+      <div class="p-6 space-y-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="edit-hero-statement" class="block text-xs font-mono uppercase text-textSecondary mb-1">Hero Statement</label>
+            <input type="text" id="edit-hero-statement" class="w-full px-3 py-2 rounded-lg bg-black/50 border border-white/10 text-textPrimary text-xs focus:border-accentGold">
+          </div>
+          <div>
+            <label for="edit-profile-location" class="block text-xs font-mono uppercase text-textSecondary mb-1">Location / Status</label>
+            <input type="text" id="edit-profile-location" class="w-full px-3 py-2 rounded-lg bg-black/50 border border-white/10 text-textPrimary text-xs focus:border-accentGold">
+          </div>
+          <div>
+            <label for="edit-profile-focus" class="block text-xs font-mono uppercase text-textSecondary mb-1">Current Focus</label>
+            <input type="text" id="edit-profile-focus" class="w-full px-3 py-2 rounded-lg bg-black/50 border border-white/10 text-textPrimary text-xs focus:border-accentGold">
+          </div>
+          <div>
+            <label for="edit-social-email" class="block text-xs font-mono uppercase text-textSecondary mb-1">Email</label>
+            <input type="email" id="edit-social-email" placeholder="nova.dev@example.com" class="w-full px-3 py-2 rounded-lg bg-black/50 border border-white/10 text-textPrimary text-xs focus:border-accentGold">
+          </div>
+          <div>
+            <label for="edit-social-github" class="block text-xs font-mono uppercase text-textSecondary mb-1">GitHub URL</label>
+            <input type="url" id="edit-social-github" placeholder="https://github.com/nova-ml" class="w-full px-3 py-2 rounded-lg bg-black/50 border border-white/10 text-textPrimary text-xs focus:border-accentGold">
+          </div>
+          <div>
+            <label for="edit-social-linkedin" class="block text-xs font-mono uppercase text-textSecondary mb-1">LinkedIn URL</label>
+            <input type="url" id="edit-social-linkedin" placeholder="https://linkedin.com/in/nova-dev" class="w-full px-3 py-2 rounded-lg bg-black/50 border border-white/10 text-textPrimary text-xs focus:border-accentGold">
+          </div>
+          <div class="sm:col-span-2">
+            <label for="edit-about-bio" class="block text-xs font-mono uppercase text-textSecondary mb-1">Biography</label>
+            <textarea id="edit-about-bio" rows="3" class="w-full px-3 py-2 rounded-lg bg-black/50 border border-white/10 text-textPrimary text-xs focus:border-accentGold"></textarea>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2">
+            <button type="button" onclick="savePortfolioCustomizations()" class="px-4 py-2 rounded-lg bg-accentGold text-[#090B0E] font-semibold text-xs font-mono">
+              Apply Live
+            </button>
+            <button type="button" onclick="exportPortfolioConfigJSON()" class="px-3.5 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono text-textPrimary">
+              Copy JSON
+            </button>
+          </div>
+          <button type="button" onclick="resetPortfolioCustomizations()" class="text-xs font-mono text-textSecondary hover:text-textPrimary">
+            Reset Defaults
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Banner -->
+  <div id="toast-banner" class="fixed bottom-5 right-5 z-50 px-4 py-3 rounded-xl bg-[#101419] text-[#F3F4F6] border border-accentGold/60 shadow-2xl text-xs font-mono flex items-center gap-2.5 hidden" role="status" aria-live="polite">
+    <span class="w-2 h-2 rounded-full bg-accentGold"></span>
+    <span id="toast-message">Message prepared</span>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- JAVASCRIPT LOGIC                                                    -->
+  <!-- =================================================================== -->
+  
+  
+
+
+
+  <!-- Scripts are split into small files so they are easier to maintain. -->
+  <script src="js/tailwind-config.js"></script>
+  <script src="js/portfolio-data.js"></script>
+  <script src="js/image-registry.js"></script>
+  <script src="js/portfolio.js"></script>
+
+</body></html>

@@ -1,0 +1,16 @@
+{
+  "name": "Nova",
+  "role": "AI/ML Developer & Software Engineer",
+  "eyebrow": "AI / MACHINE LEARNING / SOFTWARE",
+  "statement": "I build software and explore machine learning to solve meaningful real-world problems.",
+  "supporting": "Focused on Python, machine learning pipelines, data-driven systems, and turning mathematical concepts into clean, reliable software.",
+  "motto": "Building · Learning · Experimenting",
+  "bioParagraphs": [
+    "I'm Nova, a developer building my foundation in software engineering and artificial intelligence. I enjoy understanding how systems work under the hood, experimenting with data and models, and translating technical concepts into practical applications.",
+    "I'm particularly interested in machine learning, Python-based development, and projects that connect strong mathematical foundations with real-world usefulness.",
+    "My goal is to keep learning through building, testing ideas, studying the fundamentals, and documenting what I discover along the way."
+  ],
+  "focus": "Python engineering, classical ML pipelines, and deep learning with PyTorch",
+  "interests": "Artificial Intelligence, Machine Learning, Data Systems, Algorithms",
+  "location": "Open to collaborations & internships (Editable)"
+}

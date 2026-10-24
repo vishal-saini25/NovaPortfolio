@@ -1,0 +1,93 @@
+[
+  {
+    "id": "proj-tabular-ml-pipeline",
+    "featured": true,
+    "title": "Tabular ML Pipeline & Cross-Validation Harness",
+    "category": "AI / ML",
+    "status": "v1.2 · Blueprint",
+    "summary": "Modular Python & Scikit-learn workflow for leak-free feature engineering, stratified cross-validation, and automated diagnostic plots.",
+    "stack": [
+      "Python",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Matplotlib"
+    ],
+    "problem": "Preventing data leakage and inconsistent feature scaling across training and validation folds.",
+    "approach": "Encapsulated custom transformers inside Scikit-learn Pipelines with out-of-fold metric logging.",
+    "githubUrl": "https://github.com/nova-ml/tabular-ml-harness",
+    "demoUrl": ""
+  },
+  {
+    "id": "proj-pytorch-training-lab",
+    "featured": false,
+    "title": "PyTorch Autograd & Custom Training Loop Lab",
+    "category": "AI / ML",
+    "status": "Research · Blueprint",
+    "summary": "Clean PyTorch implementations exploring tensor operations, custom Dataset loaders, cosine annealing schedules, and gradient norm tracking.",
+    "stack": [
+      "Python",
+      "PyTorch",
+      "NumPy",
+      "Matplotlib"
+    ],
+    "problem": "High-level wrappers often obscure vanishing gradients and layer-wise activation dynamics.",
+    "approach": "Built explicit epoch loops with forward hooks to log activation distributions and loss landscapes.",
+    "githubUrl": "https://github.com/nova-ml/pytorch-training-lab",
+    "demoUrl": ""
+  },
+  {
+    "id": "proj-eda-visualization-toolkit",
+    "featured": false,
+    "title": "Automated EDA & Statistical Diagnostics Toolkit",
+    "category": "Data Science",
+    "status": "Utility · Blueprint",
+    "summary": "Reusable Python toolkit built on Pandas and Matplotlib for rapid dataset profiling, missingness analysis, and correlation diagnostics.",
+    "stack": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib"
+    ],
+    "problem": "Repetitive boilerplate plotting code slows down initial exploratory data analysis.",
+    "approach": "Designed composable profiling functions with a unified dark-mode Matplotlib style sheet.",
+    "githubUrl": "https://github.com/nova-ml/eda-diagnostics",
+    "demoUrl": ""
+  },
+  {
+    "id": "proj-systems-algorithms-cpp",
+    "featured": false,
+    "title": "High-Performance Data Structures & Matrix Ops in C++",
+    "category": "Software Development",
+    "status": "Systems · Blueprint",
+    "summary": "From-scratch implementations of cache-friendly matrix multiplication, priority queues, and graph algorithms in modern C++.",
+    "stack": [
+      "C++",
+      "C",
+      "Python",
+      "NumPy"
+    ],
+    "problem": "Understanding vectorized numerical libraries requires mastering contiguous memory layouts and pointers.",
+    "approach": "Implemented contiguous arena allocators and benchmarked against NumPy baselines.",
+    "githubUrl": "https://github.com/nova-ml/cpp-matrix-core",
+    "demoUrl": ""
+  },
+  {
+    "id": "proj-classical-ml-from-scratch",
+    "featured": false,
+    "title": "Core ML Estimators from Scratch in Pure NumPy",
+    "category": "Experiments",
+    "status": "Study · Blueprint",
+    "summary": "Vectorized NumPy implementations of Linear/Logistic Regression, PCA, and Decision Trees verified against Scikit-learn.",
+    "stack": [
+      "Python",
+      "NumPy",
+      "Scikit-learn",
+      "Matplotlib"
+    ],
+    "problem": "Bridging mathematical derivations with numerically stable, loop-free array code.",
+    "approach": "Replaced explicit loops with NumPy broadcasting and SVD/eigenvalue decompositions.",
+    "githubUrl": "https://github.com/nova-ml/numpy-ml-scratch",
+    "demoUrl": ""
+  }
+]
